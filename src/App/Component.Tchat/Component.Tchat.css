@@ -1,0 +1,11 @@
+.modalStyle{
+    background-color: rgb(224, 233, 243);
+    border: 1px solid darkgray;
+    margin: 50px;
+    /* width: 500px; */
+    height: 500px;
+    border-radius: 15px;
+    
+    box-shadow: 10px 10px 25px grey;
+    text-align: center;
+}
