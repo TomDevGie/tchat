@@ -1,0 +1,41 @@
+.viewer-messages{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.viewer-message-message{
+    border-bottom: 1px solid lightgray;
+    /* display: block; */
+}
+
+
+._odd{
+    background: rgba(145, 223, 233, 0.2);
+    /* opacity: 0.2; */
+}
+._even{
+    background: rgba(196, 170, 170, 0.2);
+    /* opacity: 0.2; */
+}
+
+.message-number{
+    width: 30%;
+    display: inline-block;
+
+}
+
+.message-message{
+    width: 20%;
+    display: inline-block;
+
+}
+
+.message-date{
+    width: 50%;
+    display: inline-block;
+
+}

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 
 
+
 class Sender extends Component {
   constructor(props) {
     super(props);
@@ -11,8 +12,10 @@ class Sender extends Component {
   render() {
     const { store } = this.props;
     return <div className="tchat-sender" >
-      <input onClick={(evt)=>{console.log(evt)}} type="text" id="that-sender-text" />
-      <button onClick={(evt)=>{console.log(evt)}}>Envoyer</button>
+      <input onChange={(evt)=>{this.setState({inputText:evt.target.value})}} type="text" id="that-sender-text" />
+      <button type="button" className="btn btn-primary" onClick={(evt)=>{
+        this.props.store.dispatch({type:'ADD_MESSAGE',message:{message:this.state.inputText,userId:1}});
+      }}>Envoyer</button>
     </div>;
   }
 }
